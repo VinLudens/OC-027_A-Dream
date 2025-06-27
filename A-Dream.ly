@@ -3,14 +3,17 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "A Dream"
+  subtitle = "Original Soundtrack for YPSat-2"
   %instrument = "Piano"
   composer = "VinLudens"
   %arranger = "Arr. by VinLudens"
-  tagline = \markup { \center-column {
-    \with-url #"https://youtube.com/@VinLudens"
-    \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/@VinLudens" }
-    \line { \small \italic {  \date  } }
-  } }
+  tagline = \markup {
+    \center-column {
+      \with-url #"https://youtube.com/@VinLudens"
+      \line { "Engraving with Lilypond" $(lilypond-version) \char ##x2014 "https://youtube.com/@VinLudens" }
+      \line { \small \italic {  \date  } }
+    }
+  }
 }
 
 %#(set-global-staff-size 20)
@@ -36,7 +39,8 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
 \score {
   \new PianoStaff \with {
     instrumentName = "Piano"
-  } << \accidentalStyle piano
+  } <<
+    \accidentalStyle piano
     \new Staff = "right" \with {
       midiInstrument = "acoustic grand"
     } \right
