@@ -56,6 +56,40 @@ right = \absolute {
 
   \bar "||"
 
-  <g''' c'''' e''''>2
+
+  <g''' c'''' e''''>2\fermata \ottava 0 <gis' c'' g''>4.. f''16 |
+  <a' c'' g''>4.. a''16 <b' d'' g''>4 e'' |
+  <e'' g'' c'''>4.\arpeggio d'''8 <f'' gis'' e'''>4.\arpeggio d'''8 |
+  <e'' g'' d'''>8 c''' b'' a'' <e'' g''>4\fermata f''\fermata |
+
+  r2 <e'' c'''> |
+  <gis' g''>2. f''4 |
+  <b' g''>2. a''4 |
+  <a' d'' g''>2 f'' |
+
+  r2 <e'' c'''>4. d'''8 |
+  <f'' gis'' e'''>2. d'''4 |
+  <e'' g'' d'''>4 c''' a'' g'' |
+  <e'' g''>2 f'' |
+
+  \time 2/4 g'4 gis'32 g' e' c' gis g e c | \time 4/4
+
+  \tempo "Tempo 2" 4 = 120
+  r4 <e' g' c''> <gis c' g'>4.. f'16 |
+  <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny c' gis g e c \normalsize } |
+  r4 <e' g' c''>8. d''16 <f' gis' e''>4.. d''16 |
+  <e' g' d''>8. c''16 b'8. a'16 <e' g'>2 |
+
+  \cadenzaOn <d' f'>2
+  \tiny \change Staff = "left" f32[ gis c'
+  \change Staff = "right" d' f' gis' c''
+  \change Staff = "left" d''] f''[ gis'' c'''
+  d''' f''' gis''' c'''' gis'''] f'''[ d'''
+  c''' gis'' f'' d''
+  c'' gis'] f'16[ d'
+  c' gis f d] \normalsize c8[ gis, g, \cadenzaOff \partial 8 f,]  |
+
+  \voiceOne e, \change Staff = "right" \oneVoice g'16 c'' \repeat unfold 3 { e'' c'' g' c'' } |
+
 
 }
