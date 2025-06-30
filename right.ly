@@ -65,6 +65,7 @@ right = \absolute {
         <e'' g'' c'''>4.\arpeggio d'''8 <f'' gis'' e'''>4.\arpeggio d'''8 |
         <e'' g'' d'''>8 c''' b'' a'' <e'' g''>4\fermata f''\fermata |
 
+        \tempo "Tempo 2" 4 = 120
         r2 <e'' c'''> |
         <gis' g''>2. f''4 |
         <b' g''>2. a''4 |
@@ -77,7 +78,6 @@ right = \absolute {
 
         \time 2/4 g'4 gis'32 g' e' c' gis g e c | \time 4/4
 
-        \tempo "Tempo 2" 4 = 120
         r4 <e' g' c''> <gis c' g'>4.. f'16 |
         <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny c' gis g e c \normalsize } |
         r4 <e' g' c''>8. d''16 <f' gis' e''>4.. d''16 |
@@ -92,6 +92,7 @@ right = \absolute {
         c'' gis'] f'16[ d'
         c' gis f d] \normalsize c8[ gis, g, \cadenzaOff \partial 8 f,]  |
 
+        \tempo "Tempo 1" 4 = 96
         \voiceOne e, \change Staff = "right" \oneVoice g'16 c'' \repeat unfold 3 { e'' c'' g' c'' } |
       }
       \volta 2 \volta #'() {
@@ -101,6 +102,29 @@ right = \absolute {
     }
   }
 
-  a
 
+  \ottava 2 \repeat unfold 4 { e''''16 c'''' g''' c'''' } |
+  \repeat unfold 4 { d''''16 c'''' gis''' c'''' } |
+  \repeat unfold 2 { e''''16 c'''' g''' c'''' } g'''' c'''' g''' c'''' f'''' c'''' g''' c'''' |
+  d'''' c'''' gis''' c'''' g'''' d'''' c'''' d'''' b'''' gis'''' f'''' gis'''' c''''' gis'''' f'''' gis'''' |
+
+
+  <e'''' g'''' c'''''>4 \ottava 0 <e' gis' c''>4 <e' g'>4.. <e' f'>16 |
+  <e' g'>4.. <e' gis'>16 <e' g'>4 <g c' e'> |
+
+  \cadenzaOn r4
+  \change Staff = "left" c,32[ e, g, gis,
+  \change Staff = "right" c e g gis]
+  \change Staff = "left" c[ e g gis
+  \change Staff = "right" c' e' g' gis']
+  \change Staff = "left" c'[ e' g' gis'
+  \change Staff = "right" c'' e'' g'' gis'']
+  \cadenzaOff \partial 4
+  \change Staff = "left" c''[ e'' g'' gis''
+  \change Staff = "right" c''' e''' g''' gis'''] |
+
+  \repeat tremolo 16 { g'''32 gis''' } |
+  <g''' c''''>1\arpeggio |
+
+  \bar "|."
 }

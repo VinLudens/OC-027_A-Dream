@@ -65,6 +65,7 @@ left = \absolute {
         <c' g' c''>2\arpeggio <d' f' gis' c''>\arpeggio |
         <e' g' b'>2 <f' a' c''>4 <gis' c''> |
 
+
         \clef "bass" c8 g c' d' e' g' e' d' |
         d8 gis c' d' e' d' c' gis |
         e8 b e' f' g' f' e' a' |
@@ -76,7 +77,6 @@ left = \absolute {
         <f' a' c''>2 <gis' c''>2 | \clef "bass"
 
         \time 2/4 r2 | \time 4/4
-
 
         <c,, c,>4 <c g> q q |
         q q q q |
@@ -92,6 +92,7 @@ left = \absolute {
         s s s16 s
         s s s s \normalsize s8 s s \partial 8 s \cadenzaOff  |
 
+
         \voiceTwo <c,, c,>2 \oneVoice <c g c'> |
       }
       \volta 2 \volta #'() {
@@ -101,6 +102,30 @@ left = \absolute {
     }
   }
 
-  a
+  \clef "treble"
+  <g g'>2 <g' b' d'' e''> |
+  <f f'>2 <f' gis' c'' d''> |
+  <g g'>2 <g' b' d'' e''> |
+  <f f'> <f' gis' c'' d''> |
+
+  \clef "bass"
+  <c c'>1 ~ |
+  <c c'>1 |
+
+  \cadenzaOn <c,, c,>1
+
+
+
+
+
+
+  \cadenzaOff \partial 4
+  s8
+  s8 |
+
+  \repeat tremolo 16 { e'''32 c''' } |
+  <c''' e'''>1\arpeggio |
+
+  \bar "|."
 
 }
