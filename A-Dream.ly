@@ -41,19 +41,30 @@ date = #(strftime "%B %d %Y" (localtime (current-time)))
     instrumentName = "Piano"
   } <<
     \accidentalStyle piano
-    \new Staff = "right" \with {
-      midiInstrument = "acoustic grand"
-    } \right
+    \new Staff = "right" \right
     \new Dynamics = "Dynamics" \dynamics
-    \new Staff = "left" \with {
-      midiInstrument = "acoustic grand"
-    } { \clef bass \left }
+    \new Staff = "left" { \clef bass \left }
   >>
   \layout {
     \context {
       \Score
       \editionID ##f music
     }
+  }
+}
+
+% MIDI score with unfolded repeats
+\score {
+  \new PianoStaff \unfoldRepeats {
+    <<
+      \new Staff = "right" \with {
+        midiInstrument = "acoustic grand"
+      } \right
+      \new Dynamics = "Dynamics" \dynamics
+      \new Staff = "left" \with {
+        midiInstrument = "acoustic grand"
+      } { \left }
+    >>
   }
   \midi {
     %\tempo 4=80
