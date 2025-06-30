@@ -25,11 +25,10 @@ left = \absolute {
 
   \clef "bass"
 
-  \repeat unfold 2 {
-    <c, c>2 <c g c'> |
-    <e, e>2 <e b e'> |
-  }
-
+  <c, c>2 <c g c'> |
+  <e, e>2 <e b e'> |
+  <c, c>2 <c g c'> |
+  <e, e>2 <e b e'> |
 
   <a, a>2 <a e'> |
   <f, f>2 <f c' f'> |
@@ -56,7 +55,7 @@ left = \absolute {
 
   \bar "||"
 
-  \tempo "Tempo 1" 4 = 96
+
   <c c'>2 \clef "treble" <c' g'> |
   q2 q |
   <c' g' c''>2\arpeggio <d' f' gis' c''>\arpeggio |

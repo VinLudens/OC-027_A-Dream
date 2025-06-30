@@ -25,7 +25,6 @@ right = \absolute {
   e'' e'' e'' d'' |
   b'2\) c''4 d'' |
 
-
   \repeat unfold 4 { e''16-"accel poco a poco" c'' g' c'' } |
   \repeat unfold 4 { d''16 c'' g' c'' } |
   \repeat unfold 4 { \volta 1,2,4 {e''16} \volta 3 { g'' } c'' g' c'' } |
@@ -56,7 +55,7 @@ right = \absolute {
 
   \bar "||"
 
-
+  \tempo "Tempo 1" 4 = 96
   <g''' c'''' e''''>2\fermata \ottava 0 <gis' c'' g''>4.. f''16 |
   <a' c'' g''>4.. a''16 <b' d'' g''>4 e'' |
   <e'' g'' c'''>4.\arpeggio d'''8 <f'' gis'' e'''>4.\arpeggio d'''8 |
