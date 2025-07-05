@@ -4,7 +4,6 @@
 right = \absolute {
   \global
   \key c \major
-
   \ottava 1
   \voiceOne
 
@@ -76,21 +75,21 @@ right = \absolute {
         <e'' g'' d'''>4 c''' a'' g'' |
         <e'' g''>2 f'' |
 
-        \time 2/4 g'4 gis'32 g' e' c' gis g e c | \time 4/4
+        \time 2/4 g'4 gis'32 g' e' c' \clef "bass" gis g e c \clef "treble" | \time 4/4
 
         r4 <e' g' c''> <gis c' g'>4.. f'16 |
-        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny c' gis g e c \normalsize } |
+        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny c' \clef "bass" gis g e c \clef "treble" \normalsize } |
         r4 <e' g' c''>8. d''16 <f' gis' e''>4.. d''16 |
         <e' g' d''>8. c''16 b'8. a'16 <e' g'>2 |
 
         \cadenzaOn <d' f'>2
-        \tiny \change Staff = "left" f32[ gis c'
+        \tiny \change Staff = "left" \voiceOne f32[ gis c'
         \change Staff = "right" d' f' gis' c''
-        \change Staff = "left" d''] f''[ gis'' c'''
-        d''' f''' gis''' c'''' gis'''] f'''[ d'''
-        c''' gis'' f'' d''
-        c'' gis'] f'16[ d'
-        c' gis f d] \normalsize c8[ gis, g, \cadenzaOff \partial 8 f,]  |
+        \change Staff = "left" \clef "treble" d''] \voiceTwo f''[ gis'' c'''
+        \change Staff = "right" \ottava 1 d''' f''' gis''' c'''' gis'''] f'''[ d''' \ottava 0
+        \change Staff = "left" c''' gis'' f'' d''
+        \change Staff = "right" c'' gis'] \voiceOne f'16[ d'
+        \change Staff = "left" \clef "bass" c' gis f d] \oneVoice \normalsize c8[ gis, g, \cadenzaOff \partial 8 f,]  |
 
         \tempo "Tempo 1" 4 = 96
         \voiceOne e, \change Staff = "right" \oneVoice g'16 c'' \repeat unfold 3 { e'' c'' g' c'' } |
@@ -114,14 +113,14 @@ right = \absolute {
 
   \cadenzaOn r4
   \change Staff = "left" c,32[ e, g, gis,
-  \change Staff = "right" c e g gis]
+  \change Staff = "right" \clef "bass" c e g gis]
   \change Staff = "left" c[ e g gis
   \change Staff = "right" c' e' g' gis']
-  \change Staff = "left" c'[ e' g' gis'
-  \change Staff = "right" c'' e'' g'' gis'']
+  \change Staff = "left" \clef "treble" c'[ e' g' gis'
+  \change Staff = "right" \clef "treble" c'' e'' g'' gis'']
   \cadenzaOff \partial 4
   \change Staff = "left" c''[ e'' g'' gis''
-  \change Staff = "right" c''' e''' g''' gis'''] |
+  \change Staff = "right" \ottava 1 c''' e''' g''' gis'''] |
 
   \repeat tremolo 16 { g'''32 gis''' } |
   <g''' c''''>1\arpeggio |

@@ -5,7 +5,6 @@ left = \absolute {
   \global
   \key c \major
   \tempo 4 = 96
-  \clef "treble"
   \change Staff = "right" \voiceTwo
 
   <c'' g'' c'''>1\arpeggio |
@@ -123,7 +122,7 @@ left = \absolute {
   s8
   s8 |
 
-  \repeat tremolo 16 { e'''32 c''' } |
+  \ottava 1 \repeat tremolo 16 { e'''32 c''' } |
   <c''' e'''>1\arpeggio |
 
   \bar "|."
