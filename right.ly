@@ -24,7 +24,7 @@ right = \absolute {
   e'' e'' e'' d'' |
   b'2\) c''4 d'' |
 
-  \repeat unfold 4 { e''16-"accel poco a poco" c'' g' c'' } |
+  \repeat unfold 4 { e''16 c'' g' c'' } |
   \repeat segno 2 {
     \repeat unfold 4 { d''16 c'' g' c'' } |
     \repeat unfold 4 { \volta 1,2,4 {e''16} \volta 3 { g'' } c'' g' c'' } |
@@ -83,7 +83,7 @@ right = \absolute {
         <e' g' d''>8. c''16 b'8. a'16 <e' g'>2 |
 
         \cadenzaOn <d' f'>2
-        \tiny \change Staff = "left" \voiceOne f32[ gis c'
+        \tiny \change Staff = "left" \voiceOne f32[\pp gis c'
         \change Staff = "right" d' f' gis' c''
         \change Staff = "left" \clef "treble" d''] \voiceTwo f''[ gis'' c'''
         \change Staff = "right" \ottava 1 d''' f''' gis''' c'''' gis'''] f'''[ d''' \ottava 0

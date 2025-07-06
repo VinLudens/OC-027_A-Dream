@@ -49,7 +49,7 @@ dynamics = {
 
   s1*6 |
 
-  \cadenzaOn s1
+  \cadenzaOn s1\cresc
 
 
 
