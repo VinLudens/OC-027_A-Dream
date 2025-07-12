@@ -7,24 +7,59 @@
 \addEdition fingering
 \addEdition dynamics
 
+mpCrescStretto = \tweak DynamicText.self-alignment-X #LEFT \tweak X-offset #0.0
+#(make-dynamic-script (markup #:dynamic "mp"
+                              #:normal-text #:italic "cresc. e stretto poco a poco"))
+
+subitoF = \tweak DynamicText.self-alignment-X #LEFT \tweak X-offset #0.0
+#(make-dynamic-script (markup #:normal-text #:italic "subito"
+                              #:dynamic "f"))
+
+ffMarcato = \tweak DynamicText.self-alignment-X #LEFT \tweak X-offset #0.0
+#(make-dynamic-script (markup #:dynamic "ff"
+                              #:normal-text #:italic "marcato"))
+
+paren =
+#(define-event-function (dyn) (ly:event?)
+   (make-dynamic-script
+    #{ \markup \concat {
+      \normal-text \italic \fontsize #2 (
+      \pad-x #0.2 #(ly:music-property dyn 'text)
+      \normal-text \italic \fontsize #2 )
+       }
+    #}))
+
 \editionMod dynamics 1 0/4 music.Dynamics \pp
 
-\editionMod dynamics 13 0/4 music.Dynamics \mp
-\editionMod dynamics 13 0/4 music.Dynamics.A -"cresc. e stretto poco a poco"
+\editionMod dynamics 5 0/4 music.Dynamics \pp
+
+\editionMod dynamics 13 0/4 music.Dynamics \mpCrescStretto
 
 \editionMod dynamics 19 0/4 music.Dynamics \cresc
 
-\editionMod dynamics 21 0/4 music.Dynamics \ff
+\editionMod dynamics 21 0/4 music.Dynamics \ffMarcato
+\editionMod dynamics 21 0/4 music.Voice.A ->
+\editionMod dynamics 21 1/4 music.Voice.A ->
+\editionMod dynamics 21 2/4 music.Voice.A ->
+\editionMod dynamics 21 3/4 music.Voice.A ->
 
-\editionMod dynamics 27 0/4 music.Dynamics \mp
+\editionMod dynamics 22 0/4 music.Voice.A ->
+\editionMod dynamics 22 1/4 music.Voice.A ->
+\editionMod dynamics 22 2/4 music.Voice.A ->
+\editionMod dynamics 22 3/4 music.Voice.A ->
+
+\editionMod dynamics 23 0/4 music.Voice.A ->
+\editionMod dynamics 23 1/4 music.Voice.A ->
+
+\editionMod dynamics 27 0/4 music.Dynamics \paren\mf
 
 \editionMod dynamics 29 0/4 music.Dynamics \dim
 
 \editionMod dynamics 31 0/4 music.Dynamics \p
 
 \editionMod dynamics 33 2/4 music.Dynamics \p
-\editionMod dynamics 33 0/4 music.Voice.A ->
-\editionMod dynamics 33 0/4 music.Voice.B ->
+\editionMod dynamics 33 0/4 music.Voice.A -\parenthesize ->
+\editionMod dynamics 33 0/4 music.Voice.B -\parenthesize ->
 
 \editionMod dynamics 37 0/4 music.Dynamics \mp
 
@@ -35,11 +70,13 @@
 \editionMod dynamics 41 0/4 music.Dynamics \mp
 \editionMod dynamics 41 0/4 music.Dynamics \cresc
 
-\editionMod dynamics 43 2/4 music.Dynamics \>
+\editionMod dynamics 42 2/4 music.Dynamics \f
+
+\editionMod dynamics 43 0/4 music.Dynamics \>
 
 \editionMod dynamics 44 0/4 music.Dynamics \pp
 
-\editionMod dynamics 45 0/4 music.Dynamics \sf
+\editionMod dynamics 45 0/4 music.Dynamics \subitoF
 
 \editionMod dynamics 46 0/4 music.Dynamics \sfz
 \editionMod dynamics 46 1/4 music.Dynamics \ff
