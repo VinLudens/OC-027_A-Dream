@@ -6,6 +6,7 @@
 \addEdition tweaks
 \addEdition fingering
 \addEdition dynamics
+\addEdition text
 
 mpCrescStretto = \tweak DynamicText.self-alignment-X #LEFT \tweak X-offset #0.0
 #(make-dynamic-script (markup #:dynamic "mp"
@@ -30,10 +31,12 @@ paren =
     #}))
 
 \editionMod dynamics 1 0/4 music.Dynamics \pp
+\editionMod text 1 0/4 music.Staff.A  \textMark "A dream comes to mind..."
 
 \editionMod dynamics 5 0/4 music.Dynamics \pp
 
 \editionMod dynamics 13 0/4 music.Dynamics \mpCrescStretto
+\editionMod text 13 0/4 music.Staff.A \textMark "The dream starts to manifest..."
 
 \editionMod dynamics 19 0/4 music.Dynamics \cresc
 
@@ -42,6 +45,7 @@ paren =
 \editionMod dynamics 21 1/4 music.Voice.A ->
 \editionMod dynamics 21 2/4 music.Voice.A ->
 \editionMod dynamics 21 3/4 music.Voice.A ->
+\editionMod text 21 0/4 music.Staff.A \textMark "The dream is a reality."
 
 \editionMod dynamics 22 0/4 music.Voice.A ->
 \editionMod dynamics 22 1/4 music.Voice.A ->
@@ -60,6 +64,7 @@ paren =
 \editionMod dynamics 33 2/4 music.Dynamics \p
 \editionMod dynamics 33 0/4 music.Voice.A -\parenthesize ->
 \editionMod dynamics 33 0/4 music.Voice.B -\parenthesize ->
+\editionMod text 33 2/4 music.Staff.A \textMark "Starting to reminisce about the dream..."
 
 \editionMod dynamics 37 0/4 music.Dynamics \mp
 
@@ -84,8 +89,10 @@ paren =
 \editionMod dynamics 49 0/4 music.Dynamics.A -"rall."
 
 \editionMod dynamics 51 0/4 music.Dynamics \mp
+\editionMod text 51 0/4 music.Staff.A \textMark "As if woken up from a dream..."
 
 \editionMod dynamics 52 0/4 music.Dynamics \pp
+\editionMod text 52 0/4 music.Staff.A \textMark "The dream is but a distant memory..."
 
 \editionMod dynamics 54 0/4 music.Dynamics.A -"ritenuto"
 
