@@ -87,6 +87,8 @@ paren =
 \editionMod dynamics 46 1/4 music.Dynamics \ff
 \editionMod dynamics 46 0/4 music.Voice.B -^
 
+\editionMod dynamics 48 0/4 music.Voice.B -^
+
 \editionMod dynamics 49 0/4 music.Dynamics.A -"rall."
 
 \editionMod dynamics 51 0/4 music.Dynamics \mp
