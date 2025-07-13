@@ -34,6 +34,7 @@ paren =
 \editionMod text 1 0/4 music.Staff.A  \textMark "A dream comes to mind..."
 
 \editionMod dynamics 5 0/4 music.Dynamics \pp
+\editionMod tweaks 5 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 13 0/4 music.Dynamics \mpCrescStretto
 \editionMod text 13 0/4 music.Staff.A \textMark "The dream starts to manifest..."
