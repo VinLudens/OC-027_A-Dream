@@ -59,30 +59,30 @@ right = \absolute {
         \bar "||"
 
         \tempo "Tempo 1" 4 = 96
-        <g''' c'''' e''''>2\fermata \ottava 0 <aes' c'' g''>4.. f''16 |
-        <a' c'' g''>4.. a''16 <b' d'' g''>4 e'' |
-        <e'' g'' c'''>4.\arpeggio d'''8 <f'' aes'' e'''>4.\arpeggio d'''8 |
-        <e'' g'' d'''>8 c''' b'' a'' <e'' g''>4\fermata f''\fermata |
+        <g''' c'''' e''''>2\fermata \ottava 0 <aes' c'' g''>4..\( f''16 |
+        <a' c'' g''>4.. a''16 <b' d'' g''>4 e''\) |
+        <e'' g'' c'''>4.\(\arpeggio d'''8 <f'' aes'' e'''>4.\arpeggio d'''8 |
+        <e'' g'' d'''>8 c''' b'' a'' <e'' g''>4\fermata f''\)\fermata |
 
         \tempo "Tempo 2" 4 = 120
-        r2 <e'' c'''> |
+        r2 <e'' c'''>\( |
         <aes' g''>2. f''4 |
         <b' g''>2. a''4 |
-        <a' d'' g''>2 f'' |
+        <a' d'' g''>2 f''\) |
 
-        r2 <e'' c'''>4. d'''8 |
-        <f'' aes'' e'''>2. d'''4 |
+        r2 <e'' c'''>4.\( d'''8 |
+        <f'' aes'' e'''>2.\) d'''4\( |
         <e'' g'' d'''>4 \acciaccatura { e'''16 d''' } c'''4 a'' g'' |
-        <e'' g''>2 f''\fermata |
+        <e'' g''>2 f''\)\fermata |
 
         \time 2/4 g'4 aes'32 g' e' c' \clef "bass" aes g e c \clef "treble" | \time 4/4
 
-        r4 <e' g' c''> <aes c' g'>4.. f'16 |
-        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny \clef "bass" c' aes g e c \clef "treble" \normalsize } |
-        r4 <e' g' c''>8. d''16 <f' aes' e''>4.. d''16 |
+        r4 <e' g' c''>\( <aes c' g'>4.. f'16 |
+        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32\) \tiny \clef "bass" c' aes g e c \clef "treble" \normalsize } |
+        r4 <e' g' c''>8.\( d''16 <f' aes' e''>4..\) d''16\( |
         <e' g' d''>8. c''16 b'8. a'16 <e' g'>2 |
 
-        \cadenzaOn <d' f'>2
+        \cadenzaOn <d' f'>2\)
         \tiny \change Staff = "left" \voiceOne f32[\pp aes c'
         \change Staff = "right" d' f' aes' c'']
         \change Staff = "left" \clef "treble" \voiceTwo d''[ f'' aes'' c'''
@@ -108,10 +108,10 @@ right = \absolute {
   d'''' c'''' aes''' c'''' g'''' d'''' c'''' d'''' b'''' aes'''' f'''' aes'''' c''''' aes'''' f'''' aes'''' |
 
 
-  <e'''' g'''' c'''''>4\tweak Parentheses.font-size 0\parenthesize\fermata \ottava 0 <e' aes' c''>4 <e' g'>4.. <e' f'>16 |
+  <e'''' g'''' c'''''>4\tweak Parentheses.font-size 0\parenthesize\fermata \ottava 0 <e' aes' c''>4\( <e' g'>4.. <e' f'>16 |
   <e' g'>4.. <e' aes'>16 <e' g'>4 <g c' e'> ~ |
 
-  \cadenzaOn q4
+  \cadenzaOn q4\)
   \change Staff = "left" c,32[ e, g, aes,
   \change Staff = "right" \clef "bass" c e g aes]
   \change Staff = "left" c[ e g aes
