@@ -106,5 +106,6 @@ paren =
 
 \editionMod dynamics 59 0/4 music.Dynamics \f
 \editionMod dynamics 59 0/4 music.Dynamics \>
+\editionMod tweaks 59 0/4 music.Voice.B \once\override Staff.OttavaBracket.shorten-pair = #'(-0.5 . -0.4)
 
 \editionMod dynamics 60 0/4 music.Dynamics \p
