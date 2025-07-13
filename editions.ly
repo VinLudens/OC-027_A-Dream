@@ -68,6 +68,7 @@ paren =
 \editionMod text 33 2/4 music.Staff.A \textMark "Starting to reminisce about the dream..."
 
 \editionMod dynamics 37 0/4 music.Dynamics \mp
+\editionMod tweaks 37 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 40 0/4 music.Dynamics \<
 \editionMod dynamics 40 0/4 music.Dynamics.A -"rall."
