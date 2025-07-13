@@ -76,6 +76,7 @@ paren =
 
 \editionMod dynamics 41 0/4 music.Dynamics \mp
 \editionMod dynamics 41 0/4 music.Dynamics \cresc
+\editionMod tweaks 41 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 42 2/4 music.Dynamics \f
 
