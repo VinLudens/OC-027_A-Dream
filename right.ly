@@ -109,9 +109,9 @@ right = \absolute {
 
 
   <e'''' g'''' c'''''>4\tweak Parentheses.font-size 0\parenthesize\fermata \ottava 0 <e' gis' c''>4 <e' g'>4.. <e' f'>16 |
-  <e' g'>4.. <e' gis'>16 <e' g'>4 <g c' e'> |
+  <e' g'>4.. <e' gis'>16 <e' g'>4 <g c' e'> ~ |
 
-  \cadenzaOn r4
+  \cadenzaOn q4
   \change Staff = "left" c,32[ e, g, gis,
   \change Staff = "right" \clef "bass" c e g gis]
   \change Staff = "left" c[ e g gis
