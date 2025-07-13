@@ -79,6 +79,7 @@ paren =
 \editionMod tweaks 41 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 42 2/4 music.Dynamics \f
+\editionMod tweaks 42 3/4 music.Voice.A \shape #'((0 . -1.8) (3 . 1) (0 . 0) (0 . 0)) PhrasingSlur
 
 \editionMod dynamics 43 0/4 music.Dynamics \>
 
