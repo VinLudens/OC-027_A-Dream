@@ -43,15 +43,15 @@ left = \absolute {
     <e,, e,>2 <e, b, e> |
 
     <c, c>2 <c g c'> |
-    <d, d>2 <d f gis c'> |
+    <d, d>2 <d f aes c'> |
     <e, e>2 <e b e'> |
-    <f, f>2 <f gis c' d'> |
+    <f, f>2 <f aes c' d'> |
 
 
     <g, g>2 <g d' g'> |
-    <f, f>2 <f gis c' d'> |
+    <f, f>2 <f aes c' d'> |
     <g, g>2 <g b d' e'> |
-    <f, f>2 <f gis c' d'> |
+    <f, f>2 <f aes c' d'> |
 
     \alternative {
       \volta 1 {
@@ -61,19 +61,19 @@ left = \absolute {
 
         <c c'>2 \clef "treble" <c' g'> |
         q2 q |
-        <c' g' c''>2\arpeggio <d' f' gis' c''>\arpeggio |
-        <e' g' b'>2 <f' a' c''>4 <gis' c''> |
+        <c' g' c''>2\arpeggio <d' f' aes' c''>\arpeggio |
+        <e' g' b'>2 <f' a' c''>4 <aes' c''> |
 
 
         \clef "bass" c8 g c' d' e' g' e' d' |
-        d8 gis c' d' e' d' c' gis |
+        d8 aes c' d' e' d' c' aes |
         e8 b e' f' g' f' e' a' |
         f8 c' \clef "treble" f' g' q2 | \clef "bass"
 
         \clef "bass" c8 g c' d' e' g' e' d' |
-        d8 f gis c' d' c' gis f |
+        d8 f aes c' d' c' aes f |
         e8 g b e' \clef "treble" f' g' a' b' |
-        <f' a' c''>2 <gis' c''>2 | \clef "bass"
+        <f' a' c''>2 <aes' c''>2 | \clef "bass"
 
         \time 2/4 r2 | \time 4/4
 
@@ -82,7 +82,7 @@ left = \absolute {
         <c,, c,> <c g> <d, d> q |
         <e, e> q <f, f> q |
 
-        \cadenzaOn <f gis c'>2
+        \cadenzaOn <f aes c'>2
         \tiny s32 s s
         s s s s
         s s s s
@@ -103,9 +103,9 @@ left = \absolute {
 
   \clef "treble"
   <g g'>2 <g' b' d'' e''> |
-  <f f'>2 <f' gis' c'' d''> |
+  <f f'>2 <f' aes' c'' d''> |
   <g g'>2 <g' b' d'' e''> |
-  <f f'> <f' gis' c'' d''> |
+  <f f'> <f' aes' c'' d''> |
 
   \clef "bass"
   <c c'>1 ~ |
