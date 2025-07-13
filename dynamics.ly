@@ -49,7 +49,7 @@ dynamics = {
 
   s1*6 |
 
-  \cadenzaOn \once\override DynamicTextSpanner.style = #'none s1\cresc
+  \cadenzaOn \once\override DynamicTextSpanner.style = #'none \once\override DynamicTextSpanner.Y-offset = #-2 s1\cresc
 
 
 
