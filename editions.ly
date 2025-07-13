@@ -83,6 +83,7 @@ paren =
 \editionMod dynamics 43 0/4 music.Dynamics \>
 
 \editionMod dynamics 44 0/4 music.Dynamics \pp
+\editionMod tweaks 44 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 45 0/4 music.Dynamics \subitoF
 
