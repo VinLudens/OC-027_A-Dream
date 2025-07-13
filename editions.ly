@@ -100,6 +100,7 @@ paren =
 
 \editionMod dynamics 52 0/4 music.Dynamics \pp
 \editionMod text 52 0/4 music.Staff.A \textMark "The dream is but a distant memory..."
+\editionMod tweaks 52 0/4 music.Dynamics \once\override DynamicText.X-offset = #0
 
 \editionMod dynamics 54 0/4 music.Dynamics.A -"ritenuto"
 
