@@ -84,11 +84,11 @@ right = \absolute {
 
         \cadenzaOn <d' f'>2
         \tiny \change Staff = "left" \voiceOne f32[\pp gis c'
-        \change Staff = "right" d' f' gis' c''
-        \change Staff = "left" \clef "treble" d''] \voiceTwo f''[ gis'' c'''
-        \change Staff = "right" \ottava 1 d''' f''' gis''' c'''' gis'''] f'''[ d''' \ottava 0
-        \change Staff = "left" c''' gis'' f'' d''
-        \change Staff = "right" c'' gis'] \voiceOne f'16[ d'
+        \change Staff = "right" d' f' gis' c'']
+        \change Staff = "left" \clef "treble" \voiceTwo d''[ f'' gis'' c'''
+        \change Staff = "right" \ottava 1 d''' f''' gis'''] c''''[ gis''' f''' d''' \ottava 0
+        \change Staff = "left" c''' gis'' f'' d'']
+        \change Staff = "right" \voiceOne c''[ gis' f'16 d'
         \change Staff = "left" \clef "bass" c' gis f d] \oneVoice \normalsize c8[ gis, g, \cadenzaOff \partial 8 f,]  |
 
         \tempo "Tempo 1" 4 = 96
