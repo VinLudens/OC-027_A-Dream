@@ -78,7 +78,7 @@ right = \absolute {
         \time 2/4 g'4 aes'32 g' e' c' \clef "bass" aes g e c \clef "treble" | \time 4/4
 
         r4 <e' g' c''> <aes c' g'>4.. f'16 |
-        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny c' \clef "bass" aes g e c \clef "treble" \normalsize } |
+        <a c' g'>4.. a'16 <b d' g'>4 \tuplet 6/8 { e'32 \tiny \clef "bass" c' aes g e c \clef "treble" \normalsize } |
         r4 <e' g' c''>8. d''16 <f' aes' e''>4.. d''16 |
         <e' g' d''>8. c''16 b'8. a'16 <e' g'>2 |
 
