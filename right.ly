@@ -73,7 +73,7 @@ right = \absolute {
         r2 <e'' c'''>4. d'''8 |
         <f'' aes'' e'''>2. d'''4 |
         <e'' g'' d'''>4 \acciaccatura { e'''16 d''' } c'''4 a'' g'' |
-        <e'' g''>2 f'' |
+        <e'' g''>2 f''\fermata |
 
         \time 2/4 g'4 aes'32 g' e' c' \clef "bass" aes g e c \clef "treble" | \time 4/4
 
