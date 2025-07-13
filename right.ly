@@ -108,7 +108,7 @@ right = \absolute {
   d'''' c'''' gis''' c'''' g'''' d'''' c'''' d'''' b'''' gis'''' f'''' gis'''' c''''' gis'''' f'''' gis'''' |
 
 
-  <e'''' g'''' c'''''>4 \ottava 0 <e' gis' c''>4 <e' g'>4.. <e' f'>16 |
+  <e'''' g'''' c'''''>4\tweak Parentheses.font-size 0\parenthesize\fermata \ottava 0 <e' gis' c''>4 <e' g'>4.. <e' f'>16 |
   <e' g'>4.. <e' gis'>16 <e' g'>4 <g c' e'> |
 
   \cadenzaOn r4
