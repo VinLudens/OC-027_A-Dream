@@ -3,7 +3,12 @@
 date = #(strftime "%B %d %Y" (localtime (current-time)))
 \header {
   title = "A Dream"
-  subtitle = "Original Soundtrack for YPSat-2"
+  subtitle = \markup {
+    \center-column {
+      "Original Soundtrack for YPSat-2"
+      "Original Composition No. 27"
+    }
+  }
   %instrument = "Piano"
   composer = "VinLudens"
   %arranger = "Arr. by VinLudens"
